@@ -1,6 +1,8 @@
+# クライアントとサーバーを結び付けるためのファイル
 class MessageChannel < ApplicationCable::Channel
   def subscribed
-    # stream_from "some_channel"
+    # サーバーとクライアントを関連付けるメソッド
+    stream_from "message_channel"
   end
 
   def unsubscribed
