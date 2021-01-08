@@ -10,6 +10,11 @@ consumer.subscriptions.create("MessageChannel", {
   },
 
   received(data) {
-    // Called when there's incoming data on the websocket for this channel
+    // dataの中にあるcontentの中のtextを表示（コントローラーで定義しているため使用できる）
+    const html = `<p>${data.content.text}</p>`;
+    const messages = document.getElementById('messages');
+    const newMessage = document.getElementById('message_text');
+    messages.insertAdjacentHTML('afterbegin', html);
+    newMessage.value='';
   }
 });
