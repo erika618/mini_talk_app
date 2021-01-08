@@ -2,7 +2,7 @@
 class MessageChannel < ApplicationCable::Channel
   def subscribed
     # サーバーとクライアントを関連付けるメソッド
-    stream_from "message_channel"
+    stream_from 'message_channel'
   end
 
   def unsubscribed
