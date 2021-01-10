@@ -13,6 +13,7 @@ https://mini-talk-app-20210110.herokuapp.com/
 # 説明
 
 Action Cableを用いて、メッセージを送信した時に即時に更新されるチャットアプリです。
+<br>
 https://user-images.githubusercontent.com/68714247/104112228-80899280-532f-11eb-8c5d-808446533d0c.mp4
 <br>
 
@@ -34,6 +35,10 @@ https://user-images.githubusercontent.com/68714247/104112228-80899280-532f-11eb-
 - ruby 2.6.5
 - Rails 6.0.3.4
 - MySQL
+
+【注意・補足】
+デプロイで使用する場合にはDBを「Redis」か「PostgreSQL」にて新規作成した方が良い。
+こちらのアプリは、Mysqlのため、サブスプリクションのアダプタ設定を「Async」にて作成。
 
 <br>
 
